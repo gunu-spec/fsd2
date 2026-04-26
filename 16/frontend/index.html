@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Tracking Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="dashboard">
+        <header class="header">
+            <div class="header-left">
+                <h1 class="logo">
+                    FitTrack Pro
+                </h1>
+                <p class="subtitle">Real-time fitness analytics dashboard</p>
+            </div>
+            <div class="header-right">
+                <div class="user-info">
+                    <img src="">
+                    <div class="user-details">
+                        <span class="user-name">Atharva Zope</span>
+                        <span class="user-role">Premium Member</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="stats-summary">
+            <div class="stat-card">
+                <div class="stat-icon" style="background-color: #e3f2fd;">
+                </div>
+                <div class="stat-content">
+                    <h3 class="stat-value">12,548</h3>
+                    <p class="stat-label">Daily Steps</p>
+                </div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon" style="background-color: #f3e5f5;">
+                </div>
+                <div class="stat-content">
+                    <h3 class="stat-value">2,850</h3>
+                    <p class="stat-label">Calories Burned</p>
+                </div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon" style="background-color: #e8f5e9;">
+                </div>
+                <div class="stat-content">
+                    <h3 class="stat-value">1h 42m</h3>
+                    <p class="stat-label">Active Time</p>
+                </div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon" style="background-color: #fff3e0;">
+                </div>
+                <div class="stat-content">
+                    <h3 class="stat-value">94%</h3>
+                    <p class="stat-label">Goal Completion</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="controls">
+            <div class="control-group">
+                <label for="week-select">Select Week:</label>
+                <select id="week-select">
+                    <option value="this-week">This Week</option>
+                    <option value="last-week">Last Week</option>
+                    <option value="two-weeks-ago">Two Weeks Ago</option>
+                </select>
+                <button id="refresh-btn">
+                    <i class="fas fa-sync-alt"></i>
+                    Refresh Data
+                </button>
+            </div>
+            <div class="date-range">
+                <i class=""></i>
+                <span>Apr 15 - Apr 21, 2026</span>
+            </div>
+        </div>
+
+        <div class="charts-grid">
+            <div class="chart-container">
+                <div class="chart-header">
+                    <h2>Daily Steps Trend</h2>
+                    <div class="chart-legend">
+                        <span class="legend-item">
+                            <span class="legend-color" style="background-color: #4dabf7;"></span>
+                            Steps
+                        </span>
+                    </div>
+                </div>
+                <div class="chart-wrapper">
+                    <canvas id="lineChart"></canvas>
+                </div>
+            </div>
+
+            <div class="chart-container">
+                <div class="chart-header">
+                    <h2>Activity Distribution</h2>
+                    <div class="chart-legend">
+                        <span class="legend-item">
+                            <span class="legend-color" style="background-color: #ff6b6b;"></span>
+                            Walking
+                        </span>
+                        <span class="legend-item">
+                            <span class="legend-color" style="background-color: #51cf66;"></span>
+                            Running
+                        </span>
+                        <span class="legend-item">
+                            <span class="legend-color" style="background-color: #339af0;"></span>
+                            Cycling
+                        </span>
+                    </div>
+                </div>
+                <div class="chart-wrapper">
+                    <canvas id="pieChart"></canvas>
+                </div>
+            </div>
+
+            <div class="chart-container">
+                <div class="chart-header">
+                    <h2>Weekly Activity Comparison</h2>
+                    <div class="chart-legend">
+                        <span class="legend-item">
+                            <span class="legend-color" style="background-color: #ff922b;"></span>
+                            This Week
+                        </span>
+                        <span class="legend-item">
+                            <span class="legend-color" style="background-color: #748ffc;"></span>
+                            Last Week
+                        </span>
+                    </div>
+                </div>
+                <div class="chart-wrapper">
+                    <canvas id="barChart"></canvas>
+                </div>
+            </div>
+
+            <div class="chart-container">
+                <div class="chart-header">
+                    <h2>Heart Rate Zones</h2>
+                    <div class="chart-legend">
+                        <span class="legend-item">
+                            <span class="legend-color" style="background-color: #ff6b6b;"></span>
+                            Peak
+                        </span>
+                        <span class="legend-item">
+                            <span class="legend-color" style="background-color: #ff922b;"></span>
+                            Cardio
+                        </span>
+                        <span class="legend-item">
+                            <span class="legend-color" style="background-color: #51cf66;"></span>
+                            Fat Burn
+                        </span>
+                    </div>
+                </div>
+                <div class="chart-wrapper">
+                    <canvas id="doughnutChart"></canvas>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <p>made by Atharva Zope(123B1D067)</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pune Food Ordering</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                 Pune Food Hub
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#menu">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#cart">Cart <span id="cartCount" class="badge bg-danger">0</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#checkout">Checkout</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-4">
+        <header class="text-center mb-5">
+            <h1 class="display-4">Dynamic Food Ordering - Pune</h1>
+            <p class="lead">Authentic Maharashtrian delicacies delivered across Pune</p>
+        </header>
+
+        <section id="menu" class="mb-5">
+            <h2 class="border-bottom pb-2">Pune‑Localized Menu</h2>
+            <div class="row mt-4" id="menuItems">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card h-100">
+                        <img src="" class="card-img-top" alt="Vada Pav">
+                        <div class="card-body">
+                            <h5 class="card-title">Vada Pav (Akurdi Special)</h5>
+                            <p class="card-text">Spicy potato patty in a bun with chutney.</p>
+                            <p class="h5 text-success">₹25</p>
+                            <button class="btn btn-primary add-to-cart" data-id="1" data-name="Vada Pav (Akurdi Special)" data-price="25">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card h-100">
+                        <img src="" class="card-img-top" alt="Sabudana Vada">
+                        <div class="card-body">
+                            <h5 class="card-title">Sabudana Vada</h5>
+                            <p class="card-text">Crispy tapioca pearls fritters.</p>
+                            <p class="h5 text-success">₹40</p>
+                            <button class="btn btn-primary add-to-cart" data-id="2" data-name="Sabudana Vada" data-price="40">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card h-100">
+                        <img src="" class="card-img-top" alt="Samosa">
+                        <div class="card-body">
+                            <h5 class="card-title">Samosa</h5>
+                            <p class="card-text">Triangular pastry stuffed with spiced potatoes.</p>
+                            <p class="h5 text-success">₹20</p>
+                            <button class="btn btn-primary add-to-cart" data-id="3" data-name="Samosa" data-price="20">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card h-100">
+                        <img src="" class="card-img-top" alt="Pune Misal Pav">
+                        <div class="card-body">
+                            <h5 class="card-title">Pune Misal Pav</h5>
+                            <p class="card-text">Spicy curry with sprouts, farsan, and bread.</p>
+                            <p class="h5 text-success">₹80</p>
+                            <button class="btn btn-primary add-to-cart" data-id="4" data-name="Pune Misal Pav" data-price="80">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card h-100">
+                        <img src="" class="card-img-top" alt="Puran Poli Thali">
+                        <div class="card-body">
+                            <h5 class="card-title">Puran Poli Thali</h5>
+                            <p class="card-text">Sweet flatbread with ghee, served with curry.</p>
+                            <p class="h5 text-success">₹120</p>
+                            <button class="btn btn-primary add-to-cart" data-id="5" data-name="Puran Poli Thali" data-price="120">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card h-100">
+                        <img src="" class="card-img-top" alt="Maharashtrian Thali">
+                        <div class="card-body">
+                            <h5 class="card-title">Maharashtrian Thali</h5>
+                            <p class="card-text">Complete meal with rice, dal, vegetables, chapati.</p>
+                            <p class="h5 text-success">₹150</p>
+                            <button class="btn btn-primary add-to-cart" data-id="6" data-name="Maharashtrian Thali" data-price="150">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card h-100">
+                        <img src="" class="card-img-top" alt="Mango Mastani">
+                        <div class="card-body">
+                            <h5 class="card-title">Mango Mastani</h5>
+                            <p class="card-text">Thick mango milkshake with ice cream and nuts.</p>
+                            <p class="h5 text-success">₹90</p>
+                            <button class="btn btn-primary add-to-cart" data-id="7" data-name="Mango Mastani" data-price="90">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card h-100">
+                        <img src="" class="card-img-top" alt="Solkadhi">
+                        <div class="card-body">
+                            <h5 class="card-title">Solkadhi</h5>
+                            <p class="card-text">Cooling drink made from coconut milk and kokum.</p>
+                            <p class="h5 text-success">₹50</p>
+                            <button class="btn btn-primary add-to-cart" data-id="8" data-name="Solkadhi" data-price="50">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card h-100">
+                        <img src="" class="card-img-top" alt="Piyush">
+                        <div class="card-body">
+                            <h5 class="card-title">Piyush</h5>
+                            <p class="card-text">Sweet saffron‑flavored shrikhand drink.</p>
+                            <p class="h5 text-success">₹60</p>
+                            <button class="btn btn-primary add-to-cart" data-id="9" data-name="Piyush" data-price="60">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="row">
+            <div class="col-lg-8">
+                <section id="cart" class="mb-5">
+                    <h2 class="border-bottom pb-2">Your Cart</h2>
+                    <div class="table-responsive">
+                        <table class="table table-striped mt-3">
+                            <thead>
+                                <tr>
+                                    <th>Item</th>
+                                    <th>Price</th>
+                                    <th>Quantity</th>
+                                    <th>Total</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody id="cartTable">
+                                <tr id="emptyCartRow">
+                                    <td colspan="5" class="text-center text-muted">Your cart is empty. Add items from the menu.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="d-flex justify-content-end">
+                        <h4>Total Bill: <span id="totalAmount">0</span> ₹</h4>
+                    </div>
+                </section>
+            </div>
+            <div class="col-lg-4">
+                <section id="checkout" class="mb-5">
+                    <h2 class="border-bottom pb-2">Checkout</h2>
+                    <div class="card mt-3">
+                        <div class="card-body">
+                            <h5 class="card-title">Delivery Address</h5>
+                            <div class="mb-3">
+                                <label class="form-label">Select Pune Location</label>
+                                <select class="form-select" id="locationSelect">
+                                    <option>Ravet, PCMC</option>
+                                    <option>Nigdi, Pune</option>
+                                    <option selected>Shivajinagar, Pune</option>
+                                    <option>Kothrud, Pune</option>
+                                    <option>Hinjewadi, Pune</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Custom Address</label>
+                                <textarea class="form-control" rows="3" placeholder="Enter full address">Ravet, PCMC</textarea>
+                            </div>
+                            <div class="d-grid">
+                                <button class="btn btn-success btn-lg" id="checkoutBtn">Place Order</button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-white text-center py-3 mt-5">
+        <div class="container">
+            <p class="mb-0">made by Atharva Zope(123B1D067)</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

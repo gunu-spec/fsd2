@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PCCOE Techfest Registration Form</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaPH1P2Y1x6LFhKmy9r4QYBva2Gv5Cfh99J5t1bOqUj7+0p1K6T6v4qv9w" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container py-4">
+    <div class="card mx-auto" style="max-width: 760px;">
+      <div class="card-body">
+        <h2 class="card-title text-center mb-4">PCCOE Techfest Registration Form</h2>
+        <form>
+          <fieldset class="mb-4">
+            <legend>Personal Information</legend>
+            <div class="mb-3">
+              <label for="fullName" class="form-label">Full Name</label>
+              <input type="text" class="form-control" id="fullName" name="fullName" placeholder="Enter your full name">
+            </div>
+            <div class="mb-3">
+              <label for="emailAddress" class="form-label">Email Address</label>
+              <input type="email" class="form-control" id="emailAddress" name="emailAddress" placeholder="Enter your email address">
+            </div>
+            <div class="mb-3">
+              <label class="form-label d-block">Year of Study</label>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="yearStudy" id="fe" value="FE">
+                <label class="form-check-label" for="fe">FE</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="yearStudy" id="se" value="SE">
+                <label class="form-check-label" for="se">SE</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="yearStudy" id="te" value="TE">
+                <label class="form-check-label" for="te">TE</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="yearStudy" id="be" value="BE">
+                <label class="form-check-label" for="be">BE</label>
+              </div>
+            </div>
+          </fieldset>
+          <fieldset class="mb-4">
+            <legend>Academic Details</legend>
+            <div class="mb-3">
+              <label for="engineeringBranch" class="form-label">Engineering Branch</label>
+              <select class="form-select" id="engineeringBranch" name="engineeringBranch">
+                <option value="" selected>Select your branch</option>
+                <option value="Computer">Computer</option>
+                <option value="IT">IT</option>
+                <option value="EnTC">EnTC</option>
+                <option value="Mechanical">Mechanical</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label class="form-label d-block">Events to Participate In</label>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="hackathon" name="events" value="Hackathon">
+                <label class="form-check-label" for="hackathon">Hackathon</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="webDesign" name="events" value="Web Design">
+                <label class="form-check-label" for="webDesign">Web Design</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="codeDebugging" name="events" value="Code Debugging">
+                <label class="form-check-label" for="codeDebugging">Code Debugging</label>
+              </div>
+            </div>
+          </fieldset>
+          <fieldset class="mb-4">
+            <legend>Contact Details</legend>
+            <div class="mb-3">
+              <label for="localAddress" class="form-label">Local Address</label>
+              <textarea class="form-control" id="localAddress" name="localAddress" rows="4" placeholder="Enter your local address in Pune, e.g. Thergaon"></textarea>
+            </div>
+          </fieldset>
+          <div class="d-flex gap-2">
+            <button type="submit" class="btn btn-primary">Submit</button>
+            <button type="reset" class="btn btn-secondary">Reset</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <footer class="page-footer text-center py-3">made by Atharva Zope(123B1D067)</footer>
+</body>
+</html>

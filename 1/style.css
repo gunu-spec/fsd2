@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+:root {
+    color-scheme: light;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    line-height: 1.65;
+    background-color: #f8fbff;
+    color: #13213d;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    background: radial-gradient(circle at top right, rgba(22, 50, 103, 0.12), transparent 35%), radial-gradient(circle at bottom left, rgba(78, 100, 150, 0.08), transparent 28%), #f8fbff;
+}
+
+.page-shell {
+    width: min(1200px, calc(100vw - 32px));
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.page-header {
+    padding: 36px 0 24px;
+}
+
+.eyebrow {
+    margin: 0 0 12px;
+    color: #4b6d8b;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    font-size: 0.82rem;
+    font-weight: 600;
+}
+
+h1 {
+    margin: 0;
+    font-size: clamp(2.3rem, 2.2vw, 3rem);
+    letter-spacing: -0.04em;
+    max-width: 860px;
+    line-height: 1.02;
+}
+
+.page-intro {
+    margin: 18px 0 0;
+    color: #3c516f;
+    max-width: 760px;
+    font-size: 1rem;
+}
+
+main {
+    flex: 1;
+}
+
+.table-panel {
+    margin: 28px 0 40px;
+    padding: 24px;
+    background: #ffffff;
+    border: 1px solid rgba(19, 33, 61, 0.08);
+    border-radius: 24px;
+    box-shadow: 0 20px 60px rgba(28, 54, 90, 0.08);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    overflow: hidden;
+}
+
+thead {
+    background: linear-gradient(90deg, #1a2a4b, #243660);
+}
+
+th,
+td {
+    padding: 20px 18px;
+    vertical-align: top;
+    border-bottom: 1px solid rgba(19, 33, 61, 0.08);
+}
+
+th {
+    color: #f5f8ff;
+    text-align: left;
+    font-size: 0.98rem;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+}
+
+thead th:first-child {
+    border-top-left-radius: 18px;
+}
+
+thead th:last-child {
+    border-top-right-radius: 18px;
+}
+
+tbody tr {
+    transition: transform 0.25s ease, background-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+tbody tr:nth-child(even) {
+    background: #f4f7fb;
+}
+
+tbody tr:hover {
+    background: rgba(241, 245, 253, 0.95);
+    transform: translateY(-1px);
+    box-shadow: 0 10px 22px rgba(31, 58, 93, 0.08);
+}
+
+td:first-child {
+    width: 14%;
+    font-weight: 600;
+    color: #1f3160;
+}
+
+td:nth-child(2) {
+    width: 32%;
+    color: #4d5f7a;
+}
+
+td:nth-child(3),
+td:nth-child(4) {
+    width: 27%;
+}
+
+pre {
+    margin: 0;
+    padding: 16px;
+    overflow-x: auto;
+    background: #14243b;
+    color: #dfe7ff;
+    border-radius: 14px;
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+    font-size: 0.92rem;
+    line-height: 1.5;
+    letter-spacing: 0.01em;
+}
+
+pre code {
+    color: inherit;
+    background: transparent;
+    padding: 0;
+    border-radius: 0;
+}
+
+code {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+    font-size: 0.94rem;
+    background: rgba(20, 36, 59, 0.12);
+    border-radius: 10px;
+    padding: 4px 8px;
+    color: #102343;
+}
+
+blockquote {
+    margin: 0;
+    padding: 18px 22px;
+    border-left: 4px solid #6b83ac;
+    background: rgba(106, 135, 172, 0.09);
+    color: #283856;
+    border-radius: 12px;
+}
+
+q {
+    quotes: '“' '”' '‘' '’';
+}
+
+q::before {
+    content: open-quote;
+}
+
+q::after {
+    content: close-quote;
+}
+
+abbr {
+    text-decoration: none;
+    border-bottom: 1px dotted rgba(19, 33, 61, 0.42);
+    cursor: help;
+}
+
+.page-footer {
+    padding: 18px 0;
+    text-align: center;
+    color: #1f2f4f;
+    font-size: 0.96rem;
+    border-top: 1px solid rgba(19, 33, 61, 0.08);
+}
+
+@media (max-width: 920px) {
+    th,
+    td {
+        padding: 16px 12px;
+    }
+}
+
+@media (max-width: 760px) {
+    .page-shell {
+        width: min(100vw, calc(100vw - 24px));
+    }
+    table,
+    thead,
+    tbody,
+    th,
+    td,
+    tr {
+        display: block;
+    }
+    thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+    tr {
+        margin-bottom: 18px;
+    }
+    td {
+        border: none;
+        position: relative;
+        padding-left: 50%;
+        background: #ffffff;
+    }
+    td::before {
+        position: absolute;
+        top: 18px;
+        left: 18px;
+        width: 45%;
+        white-space: nowrap;
+        font-weight: 700;
+        color: #243650;
+    }
+    td:nth-of-type(1)::before { content: 'Tag Name'; }
+    td:nth-of-type(2)::before { content: 'Description'; }
+    td:nth-of-type(3)::before { content: 'Syntax Example'; }
+    td:nth-of-type(4)::before { content: 'Live Output'; }
+}

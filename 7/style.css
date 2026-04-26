@@ -1,0 +1,54 @@
+body {
+    font-family: system-ui, sans-serif;
+    background-color: #f8f9fa;
+    color: #212529;
+    line-height: 1.6;
+}
+.hero {
+    background-color: #e9ecef;
+    border-bottom: 1px solid #dee2e6;
+}
+.hero h1 {
+    margin-bottom: 1rem;
+}
+.hero p {
+    max-width: 38rem;
+}
+.placeholder-box {
+    min-height: 220px;
+    border: 1px solid #ced4da;
+    background-color: #ffffff;
+}
+.card {
+    border: 1px solid #dee2e6;
+}
+.card-img-top {
+    height: 150px;
+    background-color: #dee2e6;
+    display: block;
+    width: 100%;
+}
+.card-body {
+    min-height: 220px;
+}
+section {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+footer {
+    font-size: 0.95rem;
+}
+footer h4 {
+    margin-bottom: 1rem;
+}
+footer hr {
+    opacity: 0.25;
+}
+@media (max-width: 576px) {
+    .hero {
+        text-align: center;
+    }
+    .placeholder-box {
+        margin-top: 1.5rem;
+    }
+}

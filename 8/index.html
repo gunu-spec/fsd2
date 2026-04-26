@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laxmi Road Emporium - Pune</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Laxmi Road Emporium</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Traditional</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Casuals</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Accessories</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Footwear</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Jewellery</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search">
+                    <button class="btn btn-outline-light" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid mt-4">
+        <div class="row">
+            <div class="col-lg-3 col-md-4">
+                <div class="card mb-4">
+                    <div class="card-header bg-primary text-white">
+                        <h5 class="mb-0">Filters</h5>
+                    </div>
+                    <div class="card-body">
+                        <h6>Availability</h6>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="stock">
+                            <label class="form-check-label" for="stock">In Stock</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="discount">
+                            <label class="form-check-label" for="discount">Discounted</label>
+                        </div>
+                        <hr>
+                        <h6>Price Range</h6>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="price" id="low">
+                            <label class="form-check-label" for="low">Under ₹500</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="price" id="medium">
+                            <label class="form-check-label" for="medium">₹500 - ₹2000</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="price" id="high">
+                            <label class="form-check-label" for="high">Above ₹2000</label>
+                        </div>
+                        <hr>
+                        <h6>Sort By</h6>
+                        <select class="form-select">
+                            <option selected>Price: Low to High</option>
+                            <option>Price: High to Low</option>
+                            <option>Popularity</option>
+                            <option>Newest</option>
+                        </select>
+                        <button class="btn btn-secondary w-100 mt-3">Apply Filters</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-9 col-md-8">
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                    <h2>Products</h2>
+                    <div class="d-flex align-items-center">
+                        <span class="me-2">View:</span>
+                        <button class="btn btn-outline-primary btn-sm me-1">Grid</button>
+                        <button class="btn btn-outline-secondary btn-sm">List</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 mb-4">
+                        <div class="card h-100">
+                            <img src="https://via.placeholder.com/250x250" class="card-img-top" alt="Authentic Puneri Pagadi">
+                            <div class="card-body">
+                                <h5 class="card-title">Authentic Puneri Pagadi</h5>
+                                <p class="card-text">Traditional Maharashtrian turban, handcrafted in Pune.</p>
+                                <p class="fw-bold text-primary">₹850</p>
+                                <button class="btn btn-primary w-100">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 mb-4">
+                        <div class="card h-100">
+                            <img src="https://via.placeholder.com/250x250" class="card-img-top" alt="Irani Cafe Graphic Tee">
+                            <div class="card-body">
+                                <h5 class="card-title">Irani Cafe Graphic Tee</h5>
+                                <p class="card-text">Casual t‑shirt with vintage Pune Irani cafe print.</p>
+                                <p class="fw-bold text-primary">₹450</p>
+                                <button class="btn btn-primary w-100">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 mb-4">
+                        <div class="card h-100">
+                            <img src="https://via.placeholder.com/250x250" class="card-img-top" alt="Maharashtrian Nath">
+                            <div class="card-body">
+                                <h5 class="card-title">Maharashtrian Nath</h5>
+                                <p class="card-text">Traditional nose ring, silver‑plated with red stone.</p>
+                                <p class="fw-bold text-primary">₹1200</p>
+                                <button class="btn btn-primary w-100">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 mb-4">
+                        <div class="card h-100">
+                            <img src="https://via.placeholder.com/250x250" class="card-img-top" alt="Kolhapuri Chappals">
+                            <div class="card-body">
+                                <h5 class="card-title">Kolhapuri Chappals</h5>
+                                <p class="card-text">Genuine leather sandals, hand‑stitched in Maharashtra.</p>
+                                <p class="fw-bold text-primary">₹1800</p>
+                                <button class="btn btn-primary w-100">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 mb-4">
+                        <div class="card h-100">
+                            <img src="https://via.placeholder.com/250x250" class="card-img-top" alt="Pune Dhol T‑Shirt">
+                            <div class="card-body">
+                                <h5 class="card-title">Pune Dhol T‑Shirt</h5>
+                                <p class="card-text">Graphic tee celebrating Pune's dhol‑tasha culture.</p>
+                                <p class="fw-bold text-primary">₹500</p>
+                                <button class="btn btn-primary w-100">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 mb-4">
+                        <div class="card h-100">
+                            <img src="https://via.placeholder.com/250x250" class="card-img-top" alt="Shaniwar Wada Keychain">
+                            <div class="card-body">
+                                <h5 class="card-title">Shaniwar Wada Keychain</h5>
+                                <p class="card-text">Miniature replica of Pune's historic fort.</p>
+                                <p class="fw-bold text-primary">₹200</p>
+                                <button class="btn btn-primary w-100">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 mb-4">
+                        <div class="card h-100">
+                            <img src="https://via.placeholder.com/250x250" class="card-img-top" alt="Mahabaleshwar Strawberry Jam">
+                            <div class="card-body">
+                                <h5 class="card-title">Mahabaleshwar Strawberry Jam</h5>
+                                <p class="card-text">Homemade jam from the hills near Pune.</p>
+                                <p class="fw-bold text-primary">₹350</p>
+                                <button class="btn btn-primary w-100">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 mb-4">
+                        <div class="card h-100">
+                            <img src="https://via.placeholder.com/250x250" class="card-img-top" alt="Paithani Silk Saree">
+                            <div class="card-body">
+                                <h5 class="card-title">Paithani Silk Saree</h5>
+                                <p class="card-text">Luxurious handwoven silk saree from Maharashtra.</p>
+                                <p class="fw-bold text-primary">₹9500</p>
+                                <button class="btn btn-primary w-100">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <nav aria-label="Page navigation">
+                    <ul class="pagination justify-content-center">
+                        <li class="page-item disabled"><a class="page-link" href="#">Previous</a></li>
+                        <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-white text-center py-3 mt-5">
+        <div class="container">
+            <p class="mb-0">made by Atharva Zope(123B1D067)</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

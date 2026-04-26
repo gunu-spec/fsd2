@@ -1,0 +1,163 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+}
+
+.card {
+    border: 1px solid #dee2e6;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.card-header {
+    background-color: #e9ecef;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.screen {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.screen-label {
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.seat-container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.seat-grid {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    gap: 12px;
+    max-width: 600px;
+}
+
+.seat {
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    cursor: pointer;
+    user-select: none;
+    transition: all 0.2s;
+}
+
+.seat:hover {
+    transform: scale(1.05);
+}
+
+.seat.available {
+    background-color: #6c757d;
+    color: white;
+}
+
+.seat.selected {
+    background-color: #0d6efd;
+    color: white;
+}
+
+.seat.sold {
+    background-color: #dc3545;
+    color: white;
+    cursor: not-allowed;
+}
+
+.seat-label {
+    font-size: 0.8rem;
+}
+
+.seat-legend {
+    margin-top: 20px;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+}
+
+.seat-legend-box {
+    width: 20px;
+    height: 20px;
+    border-radius: 3px;
+    margin-right: 8px;
+}
+
+.seat-legend-box.available {
+    background-color: #6c757d;
+}
+
+.seat-legend-box.selected {
+    background-color: #0d6efd;
+}
+
+.seat-legend-box.sold {
+    background-color: #dc3545;
+}
+
+.movie-card {
+    transition: transform 0.2s;
+}
+
+.movie-card:hover {
+    transform: translateY(-5px);
+}
+
+.btn-primary {
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+}
+
+.btn-success {
+    background-color: #198754;
+    border-color: #198754;
+}
+
+footer {
+    background-color: #e9ecef;
+    margin-top: 30px;
+}
+
+#selected-seats-list {
+    min-height: 30px;
+    padding: 10px;
+    background-color: #f8f9fa;
+    border-radius: 5px;
+    border: 1px solid #dee2e6;
+}
+
+@media (max-width: 768px) {
+    .seat-grid {
+        grid-template-columns: repeat(6, 1fr);
+        gap: 10px;
+    }
+    
+    .seat {
+        width: 35px;
+        height: 35px;
+    }
+}
+
+@media (max-width: 576px) {
+    .seat-grid {
+        grid-template-columns: repeat(5, 1fr);
+        gap: 8px;
+    }
+    
+    .seat {
+        width: 30px;
+        height: 30px;
+    }
+}

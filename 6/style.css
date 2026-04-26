@@ -1,0 +1,95 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #eaecf1;
+  color: #212529;
+}
+.container {
+  max-width: 920px;
+}
+header {
+  padding: 18px 0;
+  border-bottom: 1px solid #9fa6bc;
+  background-color: #e8ecf8;
+}
+h1 {
+  font-size: 22px;
+  letter-spacing: 0.02em;
+  margin-bottom: 8px;
+  color: #25355f;
+}
+h2 {
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 10px;
+  color: #304777;
+}
+p,
+li {
+  line-height: 1.5;
+  font-size: 14px;
+}
+header p,
+header a {
+  color: #3c4f7f;
+}
+.profile-photo {
+  width: 110px;
+  height: 110px;
+  background-color: #d8d8d8;
+  display: inline-block;
+  border: 1px solid #9ea7b5;
+}
+.card {
+  border: 1px solid #b8bfcf;
+  background-color: #fff;
+}
+.card h2 {
+  margin-top: 0;
+  margin-bottom: 12px;
+  color: #324a78;
+}
+.card p,
+.card li {
+  margin-bottom: 10px;
+}
+.card ul {
+  padding-left: 18px;
+}
+.card ul li {
+  margin-bottom: 8px;
+  position: relative;
+  padding-left: 10px;
+}
+.card ul li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #4d5f8f;
+}
+.card:nth-child(odd) {
+  background-color: #fbfbfd;
+}
+.card:nth-child(even) {
+  background-color: #ffffff;
+}
+.card a,
+.card p strong {
+  color: #2a4a7b;
+}
+.footer {
+  border-top: 1px solid #9fa6bc;
+  background-color: #f7f8fc;
+}
+.footer p {
+  font-size: 13px;
+  margin: 0;
+  color: #5a5f69;
+}
+@media (max-width: 575.98px) {
+  .profile-photo {
+    width: 90px;
+    height: 90px;
+  }
+}
