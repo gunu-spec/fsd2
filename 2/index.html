@@ -8,16 +8,19 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="page-shell min-vh-100 d-flex flex-column bg-light">
-<header class="container py-5">
+<div class="page-shell min-vh-100 d-flex flex-column">
+<div class="background-accent"></div>
+<header class="container py-5 animate-fade-up">
 <div class="row align-items-center justify-content-center">
 <div class="col-xl-8 col-lg-10">
-<div class="hero-card card border-0">
+<div class="hero-card card border-0 card-hover">
 <div class="card-body text-center px-4 py-5">
-<div class="profile-image mx-auto mb-4">
-<img src="" class="rounded-circle img-fluid" alt="Atharva's Profile Photo">
+<div class="profile-image-container mx-auto mb-4">
+<div class="profile-image">
+<img src="" alt="Atharva's Profile Photo">
 </div>
-<h1 class="display-5 fw-semibold mb-3">Atharva Gajanan Zope</h1>
+</div>
+<h1 class="display-5 fw-bold mb-3 name-title">Atharva Gajanan Zope</h1>
 <p class="hero-copy mb-0">Third-year Computer Engineering student at PCCOE specializing in <b>full-stack development</b> and <i>AI/ML</i>. Passionate about building pragmatic, well-documented solutions using <u>MERN</u>, <u>Django</u>, <u>Python</u>, and <u>Generative AI</u>.</p>
 </div>
 </div>
@@ -26,36 +29,36 @@
 </header>
 <main class="container pb-5">
 <div class="row g-4">
-<div class="col-lg-6">
-<div class="section-card card border-0 h-100">
-<div class="card-body">
+<div class="col-lg-6 animate-fade-up delay-1">
+<div class="section-card card border-0 h-100 card-hover">
+<div class="card-body p-4">
 <h2 class="section-title mb-3">About</h2>
-<p class="section-copy">A third-year Computer Engineering student with a focus on building scalable web applications and intelligent systems. Comfortable working across technologies and creating solutions that are both polished and functional.</p>
+<p class="section-copy mb-0">A third-year Computer Engineering student with a focus on building scalable web applications and intelligent systems. Comfortable working across technologies and creating solutions that are both polished and functional.</p>
 </div>
 </div>
 </div>
-<div class="col-lg-6">
-<div class="section-card card border-0 h-100">
-<div class="card-body">
+<div class="col-lg-6 animate-fade-up delay-2">
+<div class="section-card card border-0 h-100 card-hover">
+<div class="card-body p-4">
 <h2 class="section-title mb-3">Contact</h2>
 <ul class="contact-list list-unstyled mb-0">
-<li><span class="label">Email:</span> <a href="mailto:10datharvazope@gmail.com">10datharvazope@gmail.com</a></li>
-<li><span class="label">Phone:</span> <a href="tel:+919322681972">+91 9322681972</a></li>
-<li><span class="label">LinkedIn:</span> <a href="https://www.linkedin.com/in/atharva-zope-6565a7285/">linkedin.com/in/atharva-zope-6565a7285</a></li>
-<li><span class="label">GitHub:</span> <a href="https://www.github.com/atharva10d">github.com/atharva10d</a></li>
+<li><span class="label">Email:</span> <a href="mailto:10datharvazope@gmail.com" class="custom-link">10datharvazope@gmail.com</a></li>
+<li><span class="label">Phone:</span> <a href="tel:+919322681972" class="custom-link">+91 9322681972</a></li>
+<li><span class="label">LinkedIn:</span> <a href="https://www.linkedin.com/in/atharva-zope-6565a7285/" class="custom-link">linkedin.com/in/atharva-zope-6565a7285</a></li>
+<li><span class="label">GitHub:</span> <a href="https://www.github.com/atharva10d" class="custom-link">github.com/atharva10d</a></li>
 </ul>
 </div>
 </div>
 </div>
-<div class="col-12">
-<div class="section-card card border-0">
-<div class="card-body">
-<div class="table-header-row d-flex align-items-center justify-content-between mb-4">
-<h2 class="section-title mb-0">Educational Qualifications</h2>
+<div class="col-12 animate-fade-up delay-3">
+<div class="section-card card border-0 card-hover">
+<div class="card-body p-0">
+<div class="p-4 pb-0">
+<h2 class="section-title mb-4">Educational Qualifications</h2>
 </div>
-<div class="table-responsive">
-<table class="table mb-0 align-middle">
-<thead class="table-primary text-dark">
+<div class="table-responsive px-4 pb-4">
+<table class="table custom-table mb-0 align-middle">
+<thead>
 <tr>
 <th scope="col">Degree</th>
 <th scope="col">Institution</th>
@@ -65,22 +68,22 @@
 </thead>
 <tbody>
 <tr>
-<td>B.Tech, Computer Engineering</td>
+<td class="fw-semibold">B.Tech, Computer Engineering</td>
 <td>PCCOE</td>
 <td>2022 - 2027</td>
-<td>CGPA: 7.8</td>
+<td><span class="badge bg-primary-subtle text-primary rounded-pill px-3 py-2">CGPA: 7.8</span></td>
 </tr>
 <tr>
-<td>Class 12th</td>
+<td class="fw-semibold">Class 12th</td>
 <td>APJ College of Science and Commerce</td>
 <td>2022</td>
-<td>72.17%</td>
+<td><span class="badge bg-secondary-subtle text-secondary rounded-pill px-3 py-2">72.17%</span></td>
 </tr>
 <tr>
-<td>Class 10th</td>
+<td class="fw-semibold">Class 10th</td>
 <td>SNBP International School</td>
 <td>2020</td>
-<td>95.60%</td>
+<td><span class="badge bg-secondary-subtle text-secondary rounded-pill px-3 py-2">95.60%</span></td>
 </tr>
 </tbody>
 </table>
@@ -88,11 +91,11 @@
 </div>
 </div>
 </div>
-<div class="col-12 col-lg-6">
-<div class="section-card card border-0 h-100">
-<div class="card-body">
-<h2 class="section-title mb-3">Hobbies &amp; Interests</h2>
-<ul class="hobby-list text-secondary mb-0">
+<div class="col-12 col-lg-6 animate-fade-up delay-4">
+<div class="section-card card border-0 h-100 card-hover">
+<div class="card-body p-4">
+<h2 class="section-title mb-4">Hobbies &amp; Interests</h2>
+<ul class="hobby-list mb-0">
 <li>Competitive Coding (CodeChef, LeetCode, HackerRank)</li>
 <li>Astro-Photography</li>
 <li>Literary Trivia</li>
@@ -102,7 +105,7 @@
 </div>
 </div>
 </main>
-<footer class="footer mt-auto py-3 bg-white border-top">
+<footer class="footer mt-auto py-4 bg-white border-top">
 <div class="container text-center text-muted">made by Atharva Zope(123B1D067)</div>
 </footer>
 </div>
